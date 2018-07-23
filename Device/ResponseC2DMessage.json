@@ -1,19 +1,21 @@
 {
     "Message" : {
-        "Variable" : {
-            "Temperture" : {
-                "Min" : 20,
-                "Max" : 40,
-                "Digits" : 2
-            },
-            "Humidity" : {
-                "Min" : 40,
-                "Max" : 80
-            },
-            "Wind" : {
-                "Equal" : "40km/h"
-            }
+        "Variable" : [{
+            "Name": "Temperture" ,
+            "Min" : 20,
+            "Max" : 40,
+            "Digits" : 2
         },
+        {
+            "Name":"Humidity",
+            "Min" : 40,
+            "Max" : 80
+        },
+        {
+            "Name":"Wind",
+            "Equal" : "40km/h"
+        }
+    ],
         "Content" : "The current temperture is {{Temperture}} degree, the current humidity is {{Humidity}}, and the wind speed is {{Wind}}",
         "Interval" : 2000
     },
